@@ -1,8 +1,8 @@
 stages:
   build:
-    nodeLabel: sbt
+    nodeLabel: python
     steps:
-      - docker build -f Dockerfile-alpine .
+      - echo "Nothing to build"
     filesToStash:
       - '**'
   dockerPublish:
